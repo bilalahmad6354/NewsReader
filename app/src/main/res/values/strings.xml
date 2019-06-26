@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">NewsReader</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Andreo John</string>
+    <string name="nav_header_subtitle">andreo.john@ceous.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_posts">News</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+    <string name="all_time_feed">News</string>
+    <string name="text_news">News</string>
+
+    <string name="notification_channel_id">channel-01</string>
+    <string name="notification_channel_name">Channel Name</string>
+
+
+    <string name="fcm_token">FCM Token: %s</string>
+
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+</resources>
