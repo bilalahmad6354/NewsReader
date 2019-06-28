@@ -12,8 +12,7 @@
         app:cardCornerRadius="@dimen/card_view_corner_radius"
         app:cardElevation="@dimen/card_elevation"
         android:background="@color/colorWhite"
-        android:layout_margin="@dimen/card_view_padding"
-            >
+        android:layout_margin="@dimen/card_view_padding">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -34,13 +33,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/news_feed_thumbnail_padding"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginStart="@dimen/card_title_margin"
+                android:layout_marginLeft="@dimen/card_title_margin"
+                android:layout_marginEnd="@dimen/card_title_margin"
+                android:layout_marginRight="@dimen/card_title_margin"
+                android:layout_marginBottom="@dimen/card_title_margin"
                 android:maxLines="2"
-                android:text="Hello This is my text"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

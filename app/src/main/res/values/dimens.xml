@@ -11,4 +11,6 @@
     <dimen name="card_view_padding">8dp</dimen>
     <dimen name="card_view_corner_radius">8dp</dimen>
     <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_title_margin">8dp</dimen>
+    <dimen name="card_title_max_number_of_lines">2</dimen>
 </resources>

@@ -4,19 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import com.example.newsreader.common.HelperVariables;
 import com.example.newsreader.fragments.DailyNewsFeedFragment;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import android.util.Log;
 import android.view.View;
-import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.InstanceIdResult;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.wang.avi.AVLoadingIndicatorView;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -25,6 +17,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import android.view.Menu;
+import android.widget.Toast;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -62,9 +56,12 @@ public class MainActivity extends AppCompatActivity
     private void checkThePayloadAndNavigate() {
         if (getIntent().getExtras() != null) {
             Object link_value = getIntent().getExtras().get(KEY_LINK);
-            Intent intent = new Intent(this, WebViewActivity.class);
-            intent.putExtra(HelperVariables.KEY_URL_ARGUMENT, String.valueOf(link_value));
-            startActivity(intent);
+            String url = String.valueOf(link_value);
+            if(link_value != null) {
+                Intent intent = new Intent(this, WebViewActivity.class);
+                intent.putExtra(HelperVariables.KEY_URL_ARGUMENT, url);
+                startActivity(intent);
+            }
         }
     }
 
